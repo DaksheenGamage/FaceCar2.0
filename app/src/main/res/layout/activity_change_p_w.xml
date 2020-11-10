@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pic"
+    tools:context=".ChangePW">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:padding="40dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/change_password"
+            android:textSize="30sp" />
+
+
+
+        <EditText
+            android:id="@+id/txtChngPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="@string/new_password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/txtConfChngPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btnConfirmCP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cmn_btn_background"
+            android:text="@string/confirm" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"/>
+
+        <Button
+            android:id="@+id/btnBackCP"
+            android:onClick="backtolist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cmn_btn_background"
+            android:text="@string/back" />
+
+    </LinearLayout>
+</RelativeLayout>

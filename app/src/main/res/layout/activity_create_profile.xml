@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pic"
+    tools:context=".CreateProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="40dp"
+        tools:context=".CreateProfile"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:text="@string/create_profile"
+            android:textAlignment="center"
+            android:textSize="36sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/btnCreateAsOwner"
+                android:onClick="createOwner"
+                android:layout_width="match_parent"
+                android:background="@drawable/cmn_btn_background"
+                android:layout_height="80dp"
+                android:text="@string/create_as_an_owner" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/btnCreateAsMember"
+                android:onClick="createMember"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/cmn_btn_background"
+                android:text="@string/create_as_an_member" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnBackToMainFromCreateProfile"
+                android:onClick="backCreateProfile"
+                android:layout_width="match_parent"
+                android:background="@drawable/cmn_btn_background"
+                android:layout_height="80dp"
+                android:text="@string/back" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

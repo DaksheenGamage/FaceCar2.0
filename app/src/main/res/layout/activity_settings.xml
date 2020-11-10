@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_pic"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="40dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnSettingsChangePIN"
+                android:layout_width="match_parent"
+                android:background="@drawable/cmn_btn_background"
+                android:layout_height="wrap_content"
+                android:text="Change PIN"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnSettingsChangeDetails"
+                android:layout_width="match_parent"
+                android:background="@drawable/cmn_btn_background"
+                android:layout_height="wrap_content"
+                android:text="Change Details"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnSettingsRaspberryPi"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:background="@drawable/cmn_btn_background"
+                android:layout_height="wrap_content"
+                android:text="Carmodule Settings"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnSettingsBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cmn_btn_background"
+                android:text="Back"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

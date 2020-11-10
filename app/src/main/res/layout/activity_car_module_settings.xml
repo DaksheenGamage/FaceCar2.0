@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pic"
+    tools:context=".CarModuleSettings">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car Module Settings"
+            android:textSize="32dp"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="40dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/carModuleSettingsDel"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cmn_btn_background"
+                    android:text="Remove Module"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/layoutCarModuleSettingsAdd"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/txtcarModuleID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/carModuleSettingsAdd"
+                    android:background="@drawable/cmn_btn_background"
+                    android:text="Add Module"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/carModuleSettingsBack"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cmn_btn_background"
+                android:text="Back"/>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarCarModuleSettings"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

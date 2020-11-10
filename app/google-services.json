@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "929971169239",
+    "firebase_url": "https://facecar20.firebaseio.com",
+    "project_id": "facecar20",
+    "storage_bucket": "facecar20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929971169239:android:415db7e2c5e74d4de00d92",
+        "android_client_info": {
+          "package_name": "com.example.facecar20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929971169239-243nl05qestcojcvukl8acaoo36fabp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWvFmPAI4njTL_UvaiT__LvhrP-bGoDDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929971169239-243nl05qestcojcvukl8acaoo36fabp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

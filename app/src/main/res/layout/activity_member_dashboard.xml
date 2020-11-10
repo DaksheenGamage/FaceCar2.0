@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pic"
+    tools:context=".MemberDashboard"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/dashboard_hud_background"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="false"
+            app:srcCompat="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME"
+                android:paddingTop="10dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txtMemberWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:padding="2dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="signOutFromMember"
+                android:outlineSpotShadowColor="#00FFD3"
+                app:backgroundTint="#00FFD3"
+                app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
+
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnMemberChangePin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:outlineSpotShadowColor="#00FFD3"
+                app:backgroundTint="#00FFD3"
+                app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true">
+
+
+       <Button
+           android:id="@+id/btnUnlockMember"
+           android:background="@drawable/unlock_btn_background"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_centerHorizontal="true"
+           android:text="UNLOCK" />
+
+       <LinearLayout
+           android:padding="30dp"
+           android:id="@+id/LayoutBtnFaces"
+           android:layout_width="match_parent"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/btnUnlockMember"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <Button
+               android:id="@+id/btnAddFaceMember"
+               android:onClick="addface"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="Add Face"
+               android:background="@drawable/cmn_btn_background"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="4dp"/>
+           <Button
+               android:id="@+id/btnRemoveFaceMember"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/cmn_btn_background"
+               android:text="Remove Face"/>
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:paddingRight="30dp"
+           android:paddingLeft="30dp"
+           android:layout_width="match_parent"
+           android:layout_centerHorizontal="true"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/LayoutBtnFaces"
+           android:orientation="vertical">
+
+           <Button
+               android:id="@+id/btnResetPW"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:onClick="chagePassword"
+               android:background="@drawable/cmn_btn_background"
+               android:text="Change password" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="4dp"/>
+
+           <Button
+               android:id="@+id/btnDeleteAcc"
+               android:onClick="DeleteReq"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/cmn_btn_background"
+               android:text="Request to Delete account" />
+
+       </LinearLayout>
+
+   </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

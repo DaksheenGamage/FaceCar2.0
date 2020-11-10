@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_pic"
+    android:layout_height="match_parent"
+    tools:context=".GuestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".GuestActivity"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:padding="40dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guest"
+            android:textSize="36sp"
+            />
+
+        <EditText
+            android:id="@+id/txtGuestRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/vehicle_registration_no"
+            android:textAlignment="center"
+            android:maxLength="6"
+            android:inputType="textPersonName"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+
+            <Button
+                android:id="@+id/btnGuestLogin"
+                android:onClick="Login"
+                android:layout_width="match_parent"
+                android:background="@drawable/cmn_btn_background"
+                android:layout_height="50dp"
+                android:text="@string/guest_login"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+
+
+            <Button
+                android:id="@+id/btnBackFromGuest"
+                android:layout_width="match_parent"
+                android:background="@drawable/cmn_btn_background"
+                android:layout_height="50dp"
+                android:onClick="backGuest"
+                android:text="@string/back" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
